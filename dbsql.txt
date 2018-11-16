@@ -1,0 +1,13 @@
+
+CREATE TABLE `board` (
+	`bno` INT(11) NOT NULL AUTO_INCREMENT,
+	`userName` VARCHAR(10) NULL DEFAULT NULL,
+	`contents` TEXT NULL,
+	PRIMARY KEY (`bno`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
+
+
+INSERT INTO board (bno, userName, `contents`) 	VALUES (NULL, 'hjyoon', 'Hello world!! bbs sample')
