@@ -1,4 +1,4 @@
-package com.hjyoon.boarddemo.boarddemo.domain;
+package com.hjyoon.boarddemo.domain;
 
 public class BoardDomain {
 	private int bno;

@@ -1,12 +1,14 @@
-package com.hjyoon.boarddemo.boarddemo.service.impl;
+package com.hjyoon.boarddemo.service.impl;
 
-import com.hjyoon.boarddemo.boarddemo.dao.BoardMapper;
-import com.hjyoon.boarddemo.boarddemo.domain.BoardDomain;
-import com.hjyoon.boarddemo.boarddemo.service.BoardService;
+import com.hjyoon.boarddemo.dao.BoardMapper;
+import com.hjyoon.boarddemo.domain.BoardDomain;
+import com.hjyoon.boarddemo.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BoardServiceImpl implements BoardService {
 
 	@Autowired
@@ -32,8 +34,9 @@ public class BoardServiceImpl implements BoardService {
 		return boardMapper.findByBno2(bno);
 	}
 
-	@Override public List<BoardDomain> findByBno(int bno) {
-		return (List<BoardDomain>) boardMapper.findByBno(bno);
+	@Override
+	public List<BoardDomain> findByBno(int bno) {
+		return boardMapper.findByBno(bno);
 	}
 
 }

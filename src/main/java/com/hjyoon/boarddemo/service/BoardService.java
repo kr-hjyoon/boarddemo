@@ -1,6 +1,6 @@
-package com.hjyoon.boarddemo.boarddemo.service;
+package com.hjyoon.boarddemo.service;
 
-import com.hjyoon.boarddemo.boarddemo.domain.BoardDomain;
+import com.hjyoon.boarddemo.domain.BoardDomain;
 
 import java.util.List;
 

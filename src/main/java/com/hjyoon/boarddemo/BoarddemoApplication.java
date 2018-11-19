@@ -1,4 +1,4 @@
-package com.hjyoon.boarddemo.boarddemo;
+package com.hjyoon.boarddemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

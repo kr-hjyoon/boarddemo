@@ -1,4 +1,4 @@
-package com.hjyoon.boarddemo.boarddemo;
+package com.hjyoon.boarddemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
