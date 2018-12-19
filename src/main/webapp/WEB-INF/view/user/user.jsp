@@ -13,27 +13,31 @@
 <div class="container">
     <h2>Board</h2>
 
-    <table class="table table-bordered">
-        <tr>
-            <td ><input name="contents" type="text" size="100"></td>
-            <td ><input name="userName" type="text" size="10"></td>
-            <td ><input type="button" value="입력"></td>
-        </tr>
-    </table>
+    <form method="post" action="/user">
+        <table class="table table-bordered">
+            <tr>
+                <td ><input name="id" type="text" size="100"></td>
+                <td ><input name="password" type="text" size="10"></td>
+                <td ><input name="name" type="text" size="10"></td>
+                <td ><input type="submit" value="입력"></td>
+                <td ></td>
+            </tr>
+        </table>
+    </form>
     <table class="table table-bordered">
         <thead>
         <tr>
-            <th class="col-md-1">bno</th>
-            <th class="col-md-7">contents</th>
-            <th class="col-md-2">userName</th>
+            <th class="col-md-1">no</th>
+            <th class="col-md-7">id</th>
+            <th class="col-md-2">name</th>
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="board" items="${boardList}">
+        <c:forEach var="user" items="${userList}">
             <tr>
-                <td>${board.bno}</td>
-                <td><a href="#">${board.contents}</a></td>
-                <td>${board.userName}</td>
+                <td>${user.userNo}</td>
+                <td><a href="#">${user.id}</a></td>
+                <td>${user.name}</td>
             </tr>
         </c:forEach>
         </tbody>

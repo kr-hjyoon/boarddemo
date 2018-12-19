@@ -13,13 +13,16 @@
 <div class="container">
     <h2>Board</h2>
 
+    <form method="post" action="/board">
     <table class="table table-bordered">
         <tr>
             <td ><input name="contents" type="text" size="100"></td>
             <td ><input name="userName" type="text" size="10"></td>
-            <td ><input type="button" value="입력"></td>
+            <td ><input type="submit" value="입력"></td>
+            <td ></td>
         </tr>
     </table>
+    </form>
     <table class="table table-bordered">
         <thead>
         <tr>

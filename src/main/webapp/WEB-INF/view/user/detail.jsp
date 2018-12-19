@@ -11,31 +11,21 @@
 </head>
 <body>
 <div class="container">
-    <h2>Board</h2>
-
-    <table class="table table-bordered">
-        <tr>
-            <td ><input name="contents" type="text" size="100"></td>
-            <td ><input name="userName" type="text" size="10"></td>
-            <td ><input type="button" value="입력"></td>
-        </tr>
-    </table>
+    <h2>User</h2>
     <table class="table table-bordered">
         <thead>
         <tr>
-            <th class="col-md-1">bno</th>
-            <th class="col-md-7">contents</th>
-            <th class="col-md-2">userName</th>
+            <th class="col-md-1">no</th>
+            <th class="col-md-7">id</th>
+            <th class="col-md-2">name</th>
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="board" items="${boardList}">
             <tr>
-                <td>${board.bno}</td>
-                <td><a href="#">${board.contents}</a></td>
-                <td>${board.userName}</td>
+                <td>${user.userNo}</td>
+                <td><a href="#">${user.id}</a></td>
+                <td>${user.name}</td>
             </tr>
-        </c:forEach>
         </tbody>
     </table>
 </div>

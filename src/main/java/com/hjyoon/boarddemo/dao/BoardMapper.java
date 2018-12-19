@@ -8,6 +8,8 @@ import java.util.List;
 @Mapper
 public interface BoardMapper {
 
+	public BoardDomain findByBno2(@Param("bno") int bno);
+
 	@Select("SELECT * FROM board")
 	public List<BoardDomain> findAll();
 
@@ -15,10 +17,7 @@ public interface BoardMapper {
 	public List<BoardDomain> findByUserName(@Param("userName") String userName);
 
 	@Select("SELECT * FROM board WHERE bno = #{bno}")
-	public List<BoardDomain> findByBno(@Param("bno") int bno);
-
-	// my batis xml 사용 예제
-	public List<BoardDomain> findByBno2(int bno);
+	public BoardDomain findByBno(@Param("bno") int bno);
 
 	@Insert("INSERT INTO board(userName, contents) VALUES(#{userName}, #{contents})")
 	public void insert(BoardDomain board);
